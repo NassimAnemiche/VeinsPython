@@ -43,9 +43,14 @@ DISTANCE: z m
 
 ## Troubleshooting
 If you encounter permission errors with result files:
-1. Close OMNeT++
-2. Delete the contents of the `results` folder
-3. Restart the simulation
+1. Close OMNeT++.
+2. Delete the contents of the `results` folder.
+3. Restart the simulation.
+
+If you experience issues launching the OMNeT++ simulation (e.g., the Qtenv keeps getting blocked):
+1. Locate the Qtenv file in the project folder.
+2. Delete the Qtenv file.
+3. Relaunch the simulation.
 
 ## Note
 Make sure SUMO is running before starting the OMNeT++ simulation to ensure proper vehicle communication.
