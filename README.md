@@ -1,4 +1,9 @@
 # Veins Python Integration
+This repository integrates Python into Veins to capture all packets exchanged between vehicles. You can test it using the `veins_python_basic` file or integrate it into your own project by placing `MyVeinsApp.cc` and `MyVeinsApp.h` in:
+```
+veins/src/veins/modules/application/traci/
+```
+Then, launch your project.
 
 ## Prerequisites
 - OMNeT++ IDE
@@ -8,8 +13,8 @@
 ## Setup Instructions
 
 ### 1. Import Project
-1. Open OMNeT++ IDE
-2. Import the `veins_python_basic` project into your workspace
+1. Open OMNeT++ IDE.
+2. Import the `veins_python_basic` project into your workspace.
 3. Place `MyVeinsApp.cc` and `MyVeinsApp.h` in:
    ```
    veins/src/veins/modules/application/traci/
@@ -22,12 +27,12 @@ python $env:VEINS_ROOT\bin\veins_launchd -vv -c "$env:SUMO_HOME\bin\sumo.exe"
 ```
 
 ### 3. Run Simulation
-1. Build the project in OMNeT++
-2. Right-click on the project
-3. Select "Run As" -> "OMNeT++ Simulation"
+1. Build the project in OMNeT++.
+2. Right-click on the project.
+3. Select "Run As" -> "OMNeT++ Simulation".
 
 ## Output Messages
-The simulation will show:
+During the simulation, you will see messages like:
 ```
 === VEHICLE INITIALIZED ===
 ID: [vehicle_id]
@@ -53,4 +58,4 @@ If you experience issues launching the OMNeT++ simulation (e.g., the Qtenv keeps
 3. Relaunch the simulation.
 
 ## Note
-Make sure SUMO is running before starting the OMNeT++ simulation to ensure proper vehicle communication.
+Ensure SUMO is running before starting the OMNeT++ simulation to enable proper vehicle communication.
